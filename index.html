@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WaravutVisual presents G23 Evidence Copilot, a deterministic evidence verification and claim-control prototype.">
+  <meta name="theme-color" content="#0b1220">
+  <title>WaravutVisual | G23 Evidence Copilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WaravutVisual home">WaravutVisual<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#project">Project</a>
+      <a href="#verification">Verification</a>
+      <a href="#integrity">Evidence integrity</a>
+      <a class="nav-cta" href="https://github.com/WaravutVisual/g23-evidence-copilot">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">INDEPENDENT SOFTWARE PROJECT</p>
+      <h1>Evidence first.<br><span>Claims under control.</span></h1>
+      <p class="lead">WaravutVisual builds practical software concepts for evidence verification, integrity checking, and accountable AI-assisted analysis.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#project">Explore the project</a>
+        <a class="button secondary" href="https://github.com/WaravutVisual/g23-evidence-copilot">View source on GitHub ↗</a>
+      </div>
+      <div class="hero-note"><span class="status-dot"></span> G23 Evidence Copilot · Prototype</div>
+    </section>
+
+    <section class="section" id="project">
+      <div class="section-heading">
+        <p class="eyebrow">01 / PROJECT OVERVIEW</p>
+        <h2>G23 Evidence Copilot</h2>
+      </div>
+      <div class="overview-grid">
+        <div>
+          <p class="large-copy">A deterministic evidence-verification and claim-control prototype.</p>
+          <p>G23 is designed to check defined evidence properties and keep verifier-owned results separate from AI-generated explanations. Its purpose is to make the basis of a claim easier to inspect and audit.</p>
+          <a class="text-link" href="https://github.com/WaravutVisual/g23-evidence-copilot">Inspect the source repository ↗</a>
+        </div>
+        <aside class="fact-card">
+          <div><span class="fact-label">PROJECT</span><strong>G23 Evidence Copilot</strong></div>
+          <div><span class="fact-label">PUBLISHER</span><strong>WaravutVisual</strong></div>
+          <div><span class="fact-label">CREATOR</span><strong>Waravut Phonyeam</strong></div>
+          <div><span class="fact-label">CATEGORY</span><strong>Software Verification</strong></div>
+          <div><span class="fact-label">MATURITY</span><strong>Prototype</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt" id="verification">
+      <div class="section-heading">
+        <p class="eyebrow">02 / VERIFICATION STATES</p>
+        <h2>Results with explicit boundaries</h2>
+        <p>G23 uses four states to communicate the outcome of its defined checks.</p>
+      </div>
+      <div class="state-grid">
+        <article class="state-card"><span class="state valid">VALID</span><h3>Checks passed</h3><p>The defined verification checks passed. This is not a blanket guarantee of runtime correctness or authenticity.</p></article>
+        <article class="state-card"><span class="state unknown">UNKNOWN</span><h3>Not established</h3><p>The available evidence is insufficient to establish the claim.</p></article>
+        <article class="state-card"><span class="state mismatch">MISMATCH</span><h3>Does not match</h3><p>The observed evidence conflicts with an expected value or defined condition.</p></article>
+        <article class="state-card"><span class="state corrupted">CORRUPTED</span><h3>Invalid or damaged</h3><p>The evidence cannot be accepted because its structure or integrity check failed.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="integrity">
+      <div class="section-heading">
+        <p class="eyebrow">03 / EVIDENCE INTEGRITY</p>
+        <h2>Make evidence inspectable</h2>
+      </div>
+      <div class="integrity-grid">
+        <div class="integrity-item"><span class="number">01</span><h3>Deterministic checks</h3><p>Use explicit rules to evaluate evidence rather than treating generated explanations as verification.</p></div>
+        <div class="integrity-item"><span class="number">02</span><h3>Cryptographic references</h3><p>SHA-256 hashes and hash-chain checks can help detect changes to recorded evidence.</p></div>
+        <div class="integrity-item"><span class="number">03</span><h3>AI boundary</h3><p>AI-generated explanations are non-authoritative and must not override verifier-owned states.</p></div>
+      </div>
+      <div class="boundary">
+        <strong>Scope and limitations</strong>
+        <p>G23 is a general-purpose software verification and evidence-integrity prototype. A VALID result means only that the checks implemented for that result passed. It does not independently prove runtime correctness, production readiness, source authenticity, or the truth of every underlying claim. G23 is not a medical AI system or clinical decision-support tool.</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">SOURCE & TRANSPARENCY</p>
+      <h2>Review the implementation.</h2>
+      <p>The public repository is the primary source for the project’s code, documentation, and development evidence.</p>
+      <a class="button primary" href="https://github.com/WaravutVisual/g23-evidence-copilot">Open G23 on GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="brand" href="#top">WaravutVisual<span>.</span></a><p>Creator: Waravut Phonyeam</p></div>
+    <p class="footer-note">© <span id="year">2026</span> WaravutVisual · Project information is provided for technical transparency.</p>
+  </footer>
+</body>
+</html>
